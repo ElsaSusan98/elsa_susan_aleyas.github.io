@@ -1535,7 +1535,7 @@ p.comment-date {
 .single-price-box {
     box-shadow: 0 0 15px #ddd;
     margin-bottom: 30px;
-    height: 150px;
+    height: 150px !important;
 }
 
 .price-head h2 {
