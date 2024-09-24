@@ -1543,7 +1543,8 @@ p.comment-date {
 }
 .price-head p, .price-head a{
     font-size: 18px;
-    color: #000;;
+    color: #000;
+    margin-bottom:15px;
 }
 
 .price-head h2,
