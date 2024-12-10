@@ -219,7 +219,7 @@ button:focus {
     transition: .3s;
 }
 .navbar-brand.logo img {
-    max-height: 150px;
+    max-height: 45px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -694,16 +694,20 @@ span.single-timeline-horizontal {
     padding-right: 7.5px;
 }
 
-.single-portfolio {
-    height: 240px;
-    margin-bottom: 15px;
-    background-position: center;
-    background-size: cover;
+/* .single-portfolio {
+  
     background-color: #ddd;
     padding: 15px;
     position: relative;
     z-index: 1;
+    overflow: hidden; 
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    margin: 15px 15px;
     overflow: hidden;
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, .6);
+    max-width: 430px;
 }
 
 .single-portfolio:after {
@@ -798,7 +802,7 @@ span.single-timeline-horizontal {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible
-}
+} */
 
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1704,4 +1708,91 @@ input:-webkit-autofill {
 
 .copyright-text a:hover {
     color: #ffc900;
+}
+/* Container for Portfolio Items */
+.work-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Work Image Section */
+.work-img {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow only for the image */
+}
+
+.work-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.work-img:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay on Hover */
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-img:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Project Icon for Lightbox */
+.portfolio-overlay a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.portfolio-overlay a:hover {
+    color: #ffd700;
+}
+
+/* Work Description Section */
+.work-description {
+    margin-top: 15px; /* Spacing between image and text */
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.work-description h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.work-description h3 a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease-in-out;
+}
+
+.work-description h3 a:hover {
+    color: #ffc900 ;
+}
+
+.work-description span {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
 }
