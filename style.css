@@ -1796,3 +1796,33 @@ input:-webkit-autofill {
     color: #000;
     margin-top: 5px;
 }
+/* Optional Custom Styling */
+/* Ensure the modal content expands as needed */
+.modal-content {
+    height: auto; /* Make sure modal content can expand */
+    max-height: 90vh; /* Prevent modal from overflowing the viewport */
+    overflow-y: auto; /* Add scrolling if content exceeds the height */
+}
+.modal-content p,.modal-content li {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+}
+/* Optional: Control the width of the modal */
+.modal-dialog {
+    max-width: 900px; /* Optional: Set a maximum width */
+    width: 100%;
+}
+
+/* Optional: Image responsiveness */
+.ajax-container .col-md-7 img {
+    max-width: 100%; /* Ensure the image takes up all available space */
+    height: auto;
+}
+a.btn.btn-primary.model,a.btn.btn-primary.model:hover,a.btn.btn-primary.model:active ,a.btn.btn-primary.model:focus{
+    color: #000;
+    background-color: #ffc900;
+    border-color: #ffc900;
+    font-size: 14px;
+    box-shadow: none;
+}

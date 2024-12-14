@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
@@ -601,45 +603,22 @@
                 <!-- // Work List Menu -->
             </div>
             <div class="row portfolio">
-               
-                    <!-- Single Portfolio -->
-                    <div class="col-lg-4 col-md-6 work-item mix logo web react other wp">
-                        <div class="work-container">
-                            <!-- Image Section -->
-                            <div class="work-img">
-                                <picture>
-                                    <img src="assets/images/logor.png" alt="Read Scape" />
-                                </picture>
-                                <!-- Hover Overlay -->
-                                <div class="portfolio-overlay">
-                                    <div class="project-icons">
-                                        <a href="assets/images/logor.png" title="View Read Scape Project" data-lightbox="true">
-                                            <i class="fas fa-expand-arrows-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Description Section -->
-                            <div class="work-description">
-                                <h3><a href="https://main--idyllic-bonbon-ea3863.netlify.app/" target="_blank" rel="noopener">Read Scape</a></h3>
-                                <span>Grab your next favorite book</span>
-                            </div>
-                        </div>
-                    </div>
-               
-                
-                <!-- Single Portfolio -->
-                <div class="col-lg-4  col-md-6 work-item mix logo web node other wp">
+                <!-- Work Item -->
+                <div class="col-lg-4 col-md-6 work-item mix react">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/banner.webp" alt="Furry Friend" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/logor.png" alt="Read Scape" class="img-fluid"
+                                    data-toggle="modal" data-target="#readModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/banner.webp" title="View Furry Friend Finder Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#readModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -647,24 +626,217 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://github.com/ElsaSusan98/FurryFriendFinder" target="_blank" rel="noopener">Furry Friend Finder</a></h3>
+                            <h3><a href="https://main--idyllic-bonbon-ea3863.netlify.app/" target="_blank"
+                                    rel="noopener">Read Scape</a>
+                            </h3>
+                            <span>Grab your next favorite book</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="readModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="readModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="readModalCenterTitle">Readscape Digital Library Platform
+                                </h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/logor.png" alt="readscape Project Image"
+                                                class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Developed Readscape, a React-based digital library platform, connecting
+                                                readers with suitable books. This platform utilizes RESTful APIs,
+                                                Bootstrap, and Redux.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Designed a user-friendly interface using React and Bootstrap from a
+                                                    Figma design
+
+                                                <li>Implemented a robust state management system using Redux</li>
+                                                <li>Consumed RESTful APIs to fetch and display book details</li>
+                                                <li>Developed a search functionality to help readers find suitable books
+                                                </li>
+                                                <li>Created a digital library platform with comprehensive book
+                                                    information</li>
+
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">Frontend:</span> React</li>
+                                                <li><span class="text-dark fw-600 me-2">State Management:</span>
+                                                    Redux</li>
+                                                <li><span class="text-dark fw-600 me-2">Styling:</span> Bootstrap
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">APIs: </span> RESTful APIs</li>
+                                                <li>Figma design tool</li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Successfully developed a scalable and efficient digital library
+                                                    platform</li>
+                                                <li>Demonstrated expertise in React, Redux, and RESTful APIs</li>
+                                                <li>Created a user-friendly interface for a digital library platform
+                                                </li>
+                                                <li>Implemented a robust search functionality to enhance user experience
+                                                </li>
+
+                                                <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                    href="https://main--idyllic-bonbon-ea3863.netlify.app/"
+                                                    target="_blank">Visit Site<i
+                                                        class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 work-item mix node">
+                    <div class="work-container">
+                        <!-- Image Section -->
+                        <div class="work-img">
+                            <picture>
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/banner.webp" alt="Furry Friend" class="img-fluid"
+                                    data-toggle="modal" data-target="#furryModalCenter" />
+                            </picture>
+
+                            <!-- Hover Overlay -->
+                            <div class="portfolio-overlay">
+                                <div class="project-icons">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#furryModalCenter">
+                                        <i class="fas fa-expand-arrows-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Description Section -->
+                        <div class="work-description">
+                            <h3><a href="https://github.com/ElsaSusan98/FurryFriendFinder" target="_blank"
+                                    rel="noopener">Furry Friend Finder</a>
+                            </h3>
                             <span>Taking care of your Furry Friends </span>
                         </div>
                     </div>
                 </div>
-            
+                <div class="modal fade" id="furryModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="furryModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="furryModalCenterTitle">Furry Friends Finder Web App
+                                </h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/banner.webp" alt="Furry Friend" class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Collaborated on a group project, Furry Friends Finder, during university
+                                                studies. As the lead developer, I handled backend development,
+                                                leveraging Node.js, Pug, HTML, CSS, and Docker. This web application
+                                                connects pet owners with local pet trainers, enabling them to book
+                                                appointments and manage sessions.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Designed and implemented a scalable MVC-structured backend using
+                                                    Node.js</li>
+                                                <li>Developed a RESTful API for managing database interactions</li>
+                                                <li>Utilized Pug for templating and CSS for styling</li>
+                                                <li>Integrated a PHPMyAdmin database for data storage</li>
+                                                <li>Implemented Kanban for project management and Docker for
+                                                    containerization</li>
+                                                <li>Created a user-friendly dashboard for pet trainers to manage
+                                                    appointments and client information</li>
+                                                <li>Developed a client-facing interface to display trainer details, book
+                                                    appointments, and view booking history</li>
+
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">Frontend:</span> Pug, HTML, CSS
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Backend:</span>
+                                                    Node.js</li>
+                                                <li><span class="text-dark fw-600 me-2">Database: </span> PHPMyAdmin
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Project Management: </span>
+                                                    Kanban</li>
+                                                <li><span class="text-dark fw-600 me-2">Containerization:</span> Docker
+                                                </li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Successfully led the backend development of a web application</li>
+                                                <li>Demonstrated expertise in Node.js, Pug, and CSS</li>
+                                                <li>Implemented a scalable and efficient backend architecture</li>
+                                                <li>Collaborated effectively with team members using Kanban and Docker
+                                                </li>
+
+                                                <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                    href="https://github.com/ElsaSusan98/FurryFriendFinder"
+                                                    target="_blank">Visit Site<i
+                                                        class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 work-item mix php other">
+                <div class="col-lg-4 col-md-6 work-item mix php">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/logo.png" alt="Paws & Prints" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/logo.png" alt="Paws & Prints" class="img-fluid"
+                                    data-toggle="modal" data-target="#pawsModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/logo.png" title="View PetShop Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#pawsModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -672,23 +844,95 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://github.com/ElsaSusan98/WebDesign/" target="_blank" rel="noopener">Paws & Prints</a></h3>
+                            <h3><a href="https://elsasusan98.github.io/Paws_and_Prints/" target="_blank"
+                                    rel="noopener">Paws
+                                    & Prints</a>
+                            </h3>
                             <span>Ecommerse Website for pet products </span>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="pawsModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="pawsModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="pawsModalCenterTitle">Paws and Prints E-commerce Website
+                                </h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/logo.png" alt="paws & Prints" class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Developed an e-commerce website, Paws and Prints, as an academic project.
+                                                This responsive website enables users to shop for pet items online,
+                                                utilizing HTML and CSS.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Designed a visually appealing and user-friendly interface using HTML
+                                                    and CSS</li>
+                                                <li>Implemented responsive design using media queries to ensure seamless
+                                                    user experience across devices</li>
+                                                <li>Developed a functional e-commerce website with product listings and
+                                                    details pages</li>
+
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">Frontend:</span>HTML, CSS
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Media Queries</span>
+                                                </li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Successfully developed a responsive e-commerce website using HTML
+                                                    and CSS</li>
+                                                <li>Demonstrated understanding of responsive design principles and media
+                                                    queries</li>
+                                                <li>Created a user-friendly interface for an e-commerce website</li>
+
+                                                <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                    href="https://elsasusan98.github.io/Paws_and_Prints/"
+                                                    target="_blank">Visit Site<i
+                                                        class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 work-item logo react node web">
+                <div class="col-lg-4 col-md-6 work-item mix php node react">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/logo1.png" alt="Safesurf" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/Logo1.png" alt="Safesurf" class="img-fluid" data-toggle="modal"
+                                    data-target="#safeModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/logo1.png" title="View Safesurfweb Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#safeModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -696,23 +940,102 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://github.com/ElsaSusan98/SafeSurfWebApp" target="_blank" rel="noopener">Safe Surf Web App</a></h3>
+                            <h3><a href="https://github.com/ElsaSusan98/SafeSurfWebApp" target="_blank"
+                                    rel="noopener">Safe Surf Web App</a>
+                            </h3>
                             <span>Protect users from phishing websites in real-time </span>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="safeModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="safeModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="safeModalCenterTitle">Safe Surf Web App
+                                </h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/Logo1.png" alt="safe surf" class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Developed a machine learning-powered web application, Safe Surf, during
+                                                my master's education. This application predicts whether a URL is
+                                                phishing or legitimate.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Utilized machine learning algorithms to classify URLs as phishing or
+                                                    legitimate</li>
+                                                <li>Implemented a user-friendly interface using React, React Bootstrap,
+                                                    and npm</li>
+                                                <li>Designed a robust backend using Python and Flask</li>
+                                                <li>Integrated a predictive model to analyze URLs and provide real-time
+                                                    results</li>
+
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">Frontend:</span>React, React
+                                                    Bootstrap, npm,css
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Backend:</span>Python, Flask
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2"> Machine Learning:</span>
+                                                    scikit-learn, TensorFlow</li>
+                                                <li> <span class="text-dark fw-600 me-2">Dataset</span>PhishTank </li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li> Successfully implemented a machine learning model to predict
+                                                    phishing URLs</li>
+                                                <li>Designed a scalable and efficient web application using Flask and
+                                                    React</li>
+                                                <li>Improved understanding of machine learning concepts and their
+                                                    application in real-world problems</li>
+
+                                                <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                    href="https://github.com/ElsaSusan98/SafeSurfWebApp"
+                                                    target="_blank">Visit Site<i
+                                                        class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 work-item mix logo other word graphic web">
+                <div class="col-lg-4 col-md-6 work-item mix php word">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/apps.png" alt="Appsteam technologies" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/apps.png" alt="Appsteam technologies" class="img-fluid" data-toggle="modal"
+                                    data-target="#appsModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/apps.png" title="View Appsteam technologies Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#appsModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -720,23 +1043,91 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://appsteamtechnologies.com/" target="_blank" rel="noopener">Apps Team Technologies</a></h3>
-                            <span>Software Company,India,USA,Canada</span>
+                            <h3><a href="https://appsteamtechnologies.com/" target="_blank" rel="noopener">Apps Team
+                                Technologies</a></h3>
+                        <span>Software Company,India,USA,Canada</span>
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="appsModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="appsModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="appsModalCenterTitle">Appsteam Technologies Website
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container ajax-container">
+                                <div class="row g-4">
+                                    <!-- Image on the left side (with max width and responsive handling) -->
+                                    <div class="col-md-4">
+                                        <img src="assets/images/apps.png" alt="apps" class="img-fluid" />
+                                    </div>
+
+                                    <!-- Project Details on the right side -->
+                                    <div class="col-md-8">
+                                        <h4 class="text-4 fw-600">Project Overview</h4>
+                                        <p>Designed and developed a custom WordPress website from scratch for Appsteam Technologies, utilizing HTML, CSS, JavaScript, and Bootstrap</p>
+                                        <h4 class="text-4 fw-600">Key Features:</h4>
+                                        <ul class="list-style-2">
+                                            <li>Converted Adobe XD design into a fully functional website</li>
+                                            <li>Developed a dynamic careers page with a customized job plugin</li>
+                                            <li> Ensured responsive design and seamless user experience</li>
+
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Technologies:</h4>
+                                        <ul class="list-style-2">
+                                            <li><span class="text-dark fw-600 me-2">WordPress
+                                            </li>
+                                            <li><span class="text-dark fw-600 me-2">HTML
+                                            </li>
+                                            <li><span class="text-dark fw-600 me-2"> CSS</li>
+                                            <li> <span class="text-dark fw-600 me-2">JavaScript</li>
+                                          <li> <span class="text-dark fw-600 me-2">Bootstrap</li>
+                                            <li> <span class="text-dark fw-600 me-2">Adobe Xd</li>
+
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Achievements:</h4>
+                                        <ul class="list-style-2">
+                                            <li> Successfully implemented a Xd design in to website</li>
+                                            <li>Designed a scalable and efficient web application using Wordpress and
+                                                React</li>
+
+                                            <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                href="https://appsteamtechnologies.com/"
+                                                target="_blank">Visit Site<i
+                                                    class="fas fa-external-link-alt ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary model"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 work-item mix wp logo mag web">
+                <div class="col-lg-4 col-md-6 work-item mix mag">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/meron.png" alt="meron web app" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/meron.png" alt="meron" class="img-fluid" data-toggle="modal"
+                                    data-target="#meronModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/meron.png" title="View Meronapp Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#meronModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -745,22 +1136,90 @@
                         <!-- Description Section -->
                         <div class="work-description">
                             <h3><a href="https://www.meronkart.com/" target="_blank" rel="noopener">Meron Kart</a></h3>
-                            <span>Ecommerce Solution for Foods</span>
+                                <span>Ecommerce Solution for Foods</span>
                         </div>
                     </div>
                 </div>
-                 <!-- Single Portfolio -->
-                <div class="col-lg-4 col-md-6 work-item mix wp logo other word web">
+                <div class="modal fade" id="meronModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="meronModalCenter" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="meronModalCenter">Meron Cart E-commerce Website
+                            </h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container ajax-container">
+                                <div class="row g-4">
+                                    <!-- Image on the left side (with max width and responsive handling) -->
+                                    <div class="col-md-4">
+                                        <img src="assets/images/meron.png" alt="apps" class="img-fluid" />
+                                    </div>
+
+                                    <!-- Project Details on the right side -->
+                                    <div class="col-md-8">
+                                        <h4 class="text-4 fw-600">Project Overview</h4>
+                                        <p> Developed a comprehensive e-commerce website, Meron Cart, using Magento, for a freelance client. The website enables users to shop for food items online.
+                                        </p>
+                                        <h4 class="text-4 fw-600">Key Features:</h4>
+                                        <ul class="list-style-2">
+                                            <li>Customized Magento theme for a seamless user experience</li>
+                                            <li>Implemented frontend and backend development using HTML, CSS, and Magento-specific technologies</li>
+                                            <li>Integrated payment gateways and shipping modules for a smooth checkout processe</li>
+                                            <li>Ensured responsive design and optimized website performance</li>
+
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Technologies:</h4>
+                                        <ul class="list-style-2">
+                                            <li><span class="text-dark fw-600 me-2">Magento
+                                            </li>
+                                            <li><span class="text-dark fw-600 me-2">HTML
+                                            </li>
+                                            <li><span class="text-dark fw-600 me-2"> CSS</li>
+                                            <li> <span class="text-dark fw-600 me-2">JavaScript</li>
+                                          <li> <span class="text-dark fw-600 me-2">Shipping modules USPS</li>
+                                            <li> <span class="text-dark fw-600 me-2">Payment gateways PayPal</li>
+
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Achievements:</h4>
+                                        <ul class="list-style-2">
+                                            <li>Successfully delivered a fully functional e-commerce website within the client's timeline and budget</li>
+                                            <li>Implemented a user-friendly interface and seamless navigation for an enhanced shopping experience</li>
+                                            <li>Demonstrated expertise in Magento development and customisation </li>
+                                            <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                href="https://www.meronkart.com/"
+                                                target="_blank">Visit Site<i
+                                                    class="fas fa-external-link-alt ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary model"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Work Item -->
+                <div class="col-lg-4 col-md-6 work-item mix word web php">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/falco.png" alt="Falcomatics website" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/falco.png" alt="Falcomatics website" class="img-fluid"
+                                    data-toggle="modal" data-target="#falcoModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/falco.png" title="View Falcomatics Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#falcoModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -768,23 +1227,103 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://www.falcomatics.com/" target="_blank" rel="noopener">Falcomatics</a></h3>
+                            <h3><a href="https://www.falcomatics.com/" target="_blank" rel="noopener">Falcomatics</a>
+                            </h3>
                             <span>Solutions for all in one dispatch and drone data analysis</span>
                         </div>
                     </div>
                 </div>
-                 <!-- Single Portfolio -->
-                 <div class="col-lg-4 col-md-6 work-item mix wp logo other word web">
+
+                <!-- Modal -->
+                <div class="modal fade" id="falcoModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="falcoModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="falcoModalCenterTitle">Falcomatics Project</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/falco.png" alt="Falcomatics Project Image"
+                                                class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Developed the Falcomatics website during my tenure at my previous
+                                                company. Utilized WordPress, leveraging a theme and Elementor, to create
+                                                a customized website that met the client's requirements. Worked closely
+                                                with the design team to implement the provided design concept.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Customized WordPress theme using HTML, CSS, JavaScript, PHP, and
+                                                    jQuery</li>
+                                                <li>Developed pages according to client requirements using Elementor
+                                                </li>
+                                                <li>Implemented custom contact form using a plugin and customized it to
+                                                    meet client needs</li>
+                                                <li>Ensured seamless user experience and responsive design</li>
+                                                <li>Faithfully implemented the designer-provided design concept</li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">CMS:</span> WordPress</li>
+                                                <li><span class="text-dark fw-600 me-2">Theme Customization:</span>
+                                                    HTML, CSS, JavaScript, PHP, jQuery</li>
+                                                <li><span class="text-dark fw-600 me-2">Page Builder:</span> Elementor
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Contact Form:</span> Customized
+                                                    plugin</li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Successfully delivered a customized WordPress website that met
+                                                    client requirements</li>
+                                                <li>Demonstrated expertise in WordPress theme customization and
+                                                    Elementor</li>
+                                                <li>Implemented a custom contact form solution using a plugin</li>
+                                                <li>Ensured a seamless user experience and responsive design</li>
+                                                <li>Effectively collaborated with the design team to bring the design
+                                                    concept to life</li>
+                                            </ul>
+                                            <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                href="https://www.falcomatics.com/" target="_blank">Visit Site<i
+                                                    class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 work-item mix word">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/mrsponge.png" alt="mrsponge website" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/mrsponge.png" alt="mrsponge website" class="img-fluid"
+                                    data-toggle="modal" data-target="#mrModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/mrsponge.png" title="View Mrsponge Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#mrModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -792,22 +1331,90 @@
                         </div>
                         <!-- Description Section -->
                         <div class="work-description">
-                            <h3><a href="https://www.mrsponge.com/" target="_blank" rel="noopener">Falcomatics</a></h3>
+                            <h3><a href="https://www.mrsponge.com/" target="_blank" rel="noopener">Mr Sponge</a></h3>
                             <span>Waterproofing Basement Walls Services</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 work-item mix wp logo other word web">
+                <div class="modal fade" id="mrModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="mrModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title" id="mrModalCenterTitle">MrSponge Project</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container ajax-container">
+                                    <div class="row g-4">
+                                        <!-- Image on the left side (with max width and responsive handling) -->
+                                        <div class="col-md-4">
+                                            <img src="assets/images/falco.png" alt="Falcomatics Project Image"
+                                                class="img-fluid" />
+                                        </div>
+
+                                        <!-- Project Details on the right side -->
+                                        <div class="col-md-8">
+                                            <h4 class="text-4 fw-600">Project Overview</h4>
+                                            <p>Developed the Mrsponge website, a US-based (Michigan) platform, utilizing WordPress. Utilized a theme and WPBakery for development, bringing to life a design concept created in Adobe XD.</p>
+                                            <h4 class="text-4 fw-600">Key Features:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Custom WordPress theme development</li>
+                                                <li> Utilized WPBakery for page building and content management
+                                                </li>
+                                                <li>Implemented WYSIWYG (What You See Is What You Get) method for easy content editing</li>
+                                                <li>Developed a website showcasing waterproofing services and TRXPlug product</li>
+                                                <li> Ensured a responsive and user-friendly interface                                                </li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Technologies:</h4>
+                                            <ul class="list-style-2">
+                                                <li><span class="text-dark fw-600 me-2">CMS:</span> WordPress</li>
+                                                <li><span class="text-dark fw-600 me-2">Theme Customization:</span>
+                                                    HTML, CSS, JavaScript, PHP, jQuery</li>
+                                                <li><span class="text-dark fw-600 me-2">Page Builder:</span>WPBakery
+                                                </li>
+                                                <li><span class="text-dark fw-600 me-2">Contact Form:</span> Customized
+                                                    plugin</li>
+                                                    <li><span class="text-dark fw-600 me-2">Design:</span> Adobe XD</li>
+                                            </ul>
+                                            <h4 class="text-4 fw-600">Achievements:</h4>
+                                            <ul class="list-style-2">
+                                                <li>Successfully delivered a customized WordPress website meeting client requirements</li>
+                                                <li>Demonstrated expertise in WordPress theme development and WPBakery</li>
+                                                <li>Implemented a user-friendly content management system using WYSIWYG method
+                                                </li>
+                                            </ul>
+                                            <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                                href="https://www.mrsponge.com/" target="_blank">Visit Site<i
+                                                    class="fas fa-external-link-alt ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary model"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 work-item mix word web php">
                     <div class="work-container">
                         <!-- Image Section -->
                         <div class="work-img">
                             <picture>
-                                <img src="assets/images/girfalco.png" alt="Falcomatics website" />
+                                <!-- Image with Modal Trigger -->
+                                <img src="assets/images/girfalco.png" alt="girfalco website" class="img-fluid"
+                                    data-toggle="modal" data-target="#girModalCenter" />
                             </picture>
+
                             <!-- Hover Overlay -->
                             <div class="portfolio-overlay">
                                 <div class="project-icons">
-                                    <a href="assets/images/girfalco.png" title="View Gyrfalco Project" data-lightbox="true">
+                                    <!-- This icon also triggers the modal on click -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#girModalCenter">
                                         <i class="fas fa-expand-arrows-alt"></i>
                                     </a>
                                 </div>
@@ -820,6 +1427,68 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="girModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="girModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="girModalCenterTitle">Girfalco Project</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container ajax-container">
+                                <div class="row g-4">
+                                    <!-- Image on the left side (with max width and responsive handling) -->
+                                    <div class="col-md-4">
+                                        <img src="assets/images/girfalco.png" alt="Girfalco Project Image"
+                                            class="img-fluid" />
+                                    </div>
+
+                                    <!-- Project Details on the right side -->
+                                    <div class="col-md-8">
+                                        <h4 class="text-4 fw-600">Project Overview</h4>
+                                        <p>Developed the Girfalco website, a UAE-based project, during my tenure at my previous company. Utilized WordPress to create a custom theme, bringing to life a design concept created in Adobe XD.</p>
+                                        <h4 class="text-4 fw-600">Key Features:</h4>
+                                        <ul class="list-style-2">
+                                            <li>Custom WordPress theme development</li>
+                                            <li>Implemented design from Adobe XD using HTML, Bootstrap, and CSS
+                                            </li>
+                                            <li>Developed a website showcasing vehicle GPS tracking services</li>
+                                            <li>Ensured a responsive and user-friendly interface</li>
+                                                                      
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Technologies:</h4>
+                                        <ul class="list-style-2">
+                                            <li><span class="text-dark fw-600 me-2">CMS:</span> WordPress</li>
+                                            <li><span class="text-dark fw-600 me-2">Theme Customization:</span>
+                                                HTML, CSS, JavaScript, PHP, jQuery</li>
+                                            <li><span class="text-dark fw-600 me-2">PHP
+                                            </li>
+                                                <li><span class="text-dark fw-600 me-2">Design:</span> Adobe XD</li>
+                                        </ul>
+                                        <h4 class="text-4 fw-600">Achievements:</h4>
+                                        <ul class="list-style-2">
+                                            <li> Successfully delivered a custom WordPress website meeting client requirements</li>
+                                            <li> Demonstrated expertise in WordPress theme development and frontend technologies</li>
+                                            <li>Effectively translated Adobe XD design concept into a functional website
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-primary model shadow-none rounded-0 px-3 py-1 mt-2"
+                                            href="https://girfalco.sa/" target="_blank">Visit Site<i
+                                                class="fas fa-external-link-alt ms-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary model"
+                                data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
         </div>
